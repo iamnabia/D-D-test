@@ -70,9 +70,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
 	  <Folder Include="Services\" />
-	  <Folder Include="ViewModels\" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -82,6 +80,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\RaceView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

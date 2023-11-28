@@ -1,13 +1,21 @@
-﻿using dandd.Views;
-namespace dandd
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+using dandd.Models;
+using dandd.Models.dandd.ViewModels;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
+using System.Text.Json;
+using System.Windows.Input;
 
-            MainPage = new RaceView();
-        }
+namespace dandd;
+
+public partial class App : ContentPage
+{
+	public App(View mainPage)
+    {
+        InitializeComponent();
+        MainPage = new View();
+        MainPage = mainPage;
     }
+    
 }
+
+
